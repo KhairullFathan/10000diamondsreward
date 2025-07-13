@@ -7,7 +7,7 @@ const DiamondRewardModal = ({ onClaimReward }) => {
     const hasSeenModal = false
 
     if (!hasSeenModal) {
-      setIsVisible(false)
+      setIsVisible(true)
       // localStorage.setItem('hasSeenRewardModal', 'true')
 
       // const timer = setTimeout(() => {
