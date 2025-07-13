@@ -7,7 +7,7 @@ const Hero = () => {
           {/* Hero utama - ukuran sama dengan yang lain di mobile */}
           <div className="aspect-video md:aspect-auto md:col-span-2 lg:col-span-3 md:row-span-2">
             <img
-              src="./public/hero-academy.jpg"
+              src="/hero-academy.jpg"
               className="w-full h-full object-cover rounded-lg shadow-lg"
               alt="Game Academy"
             />
@@ -22,7 +22,7 @@ const Hero = () => {
 
           {/* Item-item sekunder */}
           <HeroItem
-            image="./public/hero-ranking.jpg"
+            image="/hero-ranking.jpg"
             title="Hero Ranking"
             subtitle="Hero strength ranking"
             mdColStart="3"
@@ -30,7 +30,7 @@ const Hero = () => {
           />
 
           <HeroItem
-            image="./public/payment.jpg"
+            image="/payment.jpg"
             title="Payment"
             subtitle="Recharge methods"
             mdColStart="4"
@@ -38,7 +38,7 @@ const Hero = () => {
           />
 
           <HeroItem
-            image="./public/redeem.jpg"
+            image="/redeem.jpg"
             title="Redeem"
             subtitle="Redeem game awards"
             mdColStart="3"
@@ -47,7 +47,7 @@ const Hero = () => {
           />
 
           <HeroItem
-            image="./public/fan-art.jpg"
+            image="/fan-art.jpg"
             title="Fan Art"
             subtitle="Player created designs"
             mdColStart="4"

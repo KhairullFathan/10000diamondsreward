@@ -138,23 +138,19 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-[url('./public/header.png')] bg-cover bg-center">
+      <header className="bg-[url('/header.png')] bg-cover bg-center">
         <div className="container mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between">
           {/* Left Section */}
           <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 w-full md:w-auto">
             {/* Logo */}
             <div className="flex items-center">
-              <img
-                src="./public/logo.png"
-                className="w-32 md:w-40"
-                alt="Logo"
-              />
+              <img src="/logo.png" className="w-32 md:w-40" alt="Logo" />
             </div>
 
             {/* Language Selector */}
             <div className="flex items-center space-x-1">
               <div className="w-6 md:w-8 rounded-full mr-2">
-                <img src="./public/globe.svg" className="w-full" alt="Globe" />
+                <img src="/globe.svg" className="w-full" alt="Globe" />
               </div>
               <span className="text-lg md:text-xl border-l px-2">EN</span>
             </div>
@@ -173,14 +169,14 @@ const Header = () => {
             <div className="flex space-x-1 md:space-x-2">
               <div className="px-2 md:px-3 py-1 rounded text-xs flex items-center">
                 <img
-                  src="./public/appstore.png"
+                  src="/appstore.png"
                   className="h-8 md:h-10"
                   alt="App Store"
                 />
               </div>
               <div className="px-2 md:px-3 py-1 rounded text-xs flex items-center">
                 <img
-                  src="./public/playstore.png"
+                  src="/playstore.png"
                   className="h-8 md:h-10"
                   alt="Play Store"
                 />
@@ -274,16 +270,12 @@ const Header = () => {
                 {/* Social Login */}
                 <div className="grid grid-cols-2 gap-3">
                   <button className="flex items-center justify-center space-x-2 bg-blue-900/30 border border-blue-700 rounded-md py-2 px-4 hover:bg-blue-900/50 transition">
-                    <img
-                      src="./public/icons-google.svg"
-                      alt="Google"
-                      className="h-4"
-                    />
+                    <img src="/icons-google.svg" alt="Google" className="h-4" />
                     <span className="text-sm">Google</span>
                   </button>
                   <button className="flex items-center justify-center space-x-2 bg-blue-900/30 border border-blue-700 rounded-md py-2 px-4 hover:bg-blue-900/50 transition">
                     <img
-                      src="./public/icons-facebook.svg"
+                      src="/icons-facebook.svg"
                       alt="Facebook"
                       className="h-4"
                     />

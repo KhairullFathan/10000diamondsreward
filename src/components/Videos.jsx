@@ -12,7 +12,7 @@ const VideoCard = ({ thumbnail, title, views }) => {
         {/* Play Button */}
         <div className="absolute inset-0 flex items-center justify-center bg-black/20 hover:bg-black/30 transition">
           <div className="w-16 md:w-20 hover:scale-110 transition-transform">
-            <img src="./public/play.png" alt="Play" className="w-full" />
+            <img src="/play.png" alt="Play" className="w-full" />
           </div>
         </div>
 
@@ -35,34 +35,34 @@ const VideoCard = ({ thumbnail, title, views }) => {
 const Videos = () => {
   const videoData = [
     {
-      thumbnail: './public/v01.jpg',
+      thumbnail: '/v01.jpg',
       title:
         'ALLSTAR Events Preview | Dino Planet Adventure & Unlock Valuable Rewards',
       views: 12729,
     },
     {
-      thumbnail: './public/v02.jpg',
+      thumbnail: '/v02.jpg',
       title:
         'Secret of the Empress | Zetian Fun Cartoon | Celestial Empress | Mobile Legends',
       views: 19832,
     },
     {
-      thumbnail: './public/v03.jpg',
+      thumbnail: '/v03.jpg',
       title: 'Hero Spotlight | Zetian | Celestial Empress',
       views: 31449,
     },
     {
-      thumbnail: './public/v04.jpg',
+      thumbnail: '/v04.jpg',
       title: 'New Game Mode Preview | Battle Royale in Mobile Legends',
       views: 24567,
     },
     {
-      thumbnail: './public/v05.jpg',
+      thumbnail: '/v05.jpg',
       title: 'Season 25 Highlights | Best Plays and Moments',
       views: 18945,
     },
     {
-      thumbnail: './public/v06.jpg',
+      thumbnail: '/v06.jpg',
       title: "Behind the Scenes | Making of Zetian's Character Design",
       views: 15678,
     },
@@ -75,11 +75,7 @@ const Videos = () => {
         <div className="flex items-center justify-between mb-4 sm:mb-6">
           <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-[#2563eb]/40 to-[#0f172a]/80 px-3 sm:px-4 py-1 sm:py-2 border-l-4 border-blue-400 shadow-sm rounded-r">
             <div className="w-8 sm:w-10 h-8 sm:h-10">
-              <img
-                src="./public/videos.svg"
-                className="w-full"
-                alt="Videos Icon"
-              />
+              <img src="/videos.svg" className="w-full" alt="Videos Icon" />
             </div>
             <h2 className="text-blue-200 text-sm sm:text-lg font-semibold uppercase tracking-wide">
               VIDEOS

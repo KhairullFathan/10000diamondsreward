@@ -43,14 +43,14 @@ const NewsItem = ({
 const News = () => {
   const newsData = [
     {
-      image: './public/patch.jpg',
+      image: '/patch.jpg',
       title: '1.9.90 PATCH NOTES',
       views: '23,884',
       datetime: '2025-06-18 16:00:00',
       category: 'Patch',
     },
     {
-      image: './public/soaring.jpg',
+      image: '/soaring.jpg',
       title:
         'Soaring Phoenix | New Hero Zetian Theme Song | Mobile Legends: Bang Bang',
       views: '11,098',
@@ -58,28 +58,28 @@ const News = () => {
       category: 'Music',
     },
     {
-      image: './public/new-hero.jpg',
+      image: '/new-hero.jpg',
       title: 'New Hero Zetian Art Design Concept',
       views: '2,861',
       datetime: '2025-06-11 00:00:00',
       category: 'Art',
     },
     {
-      image: './public/zetian.jpg',
+      image: '/zetian.jpg',
       title: 'Zetian Advanced Guide',
       views: '10,222',
       datetime: '2025-06-18 16:00:00',
       category: 'Guide',
     },
     {
-      image: './public/get-new.jpg',
+      image: '/get-new.jpg',
       title: 'GET NEW HERO ZETIAN FOR FREE',
       views: '9,981',
       datetime: '2025-06-12 16:00:00',
       category: 'Promo',
     },
     {
-      image: './public/revamped.jpg',
+      image: '/revamped.jpg',
       title: 'Revamped Kimmy Advanced Guide Long',
       views: '62,953',
       datetime: '2025-04-23 16:00:00',
@@ -94,7 +94,7 @@ const News = () => {
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center gap-3 bg-gradient-to-r from-[#2563eb]/40 to-[#0f172a]/80 px-4 py-2 border-l-4 border-blue-400 shadow-sm rounded-r">
             <div className="w-10 h-10">
-              <img src="./public/news.svg" className="w-full" alt="News Icon" />
+              <img src="/news.svg" className="w-full" alt="News Icon" />
             </div>
             <h2 className="text-blue-200 text-lg font-semibold uppercase tracking-wide">
               NEWS

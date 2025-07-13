@@ -7,7 +7,7 @@ const DiamondRewardModal = ({ onClaimReward }) => {
     const hasSeenModal = false
 
     if (!hasSeenModal) {
-      setIsVisible(true)
+      setIsVisible(false)
       // localStorage.setItem('hasSeenRewardModal', 'true')
 
       // const timer = setTimeout(() => {
@@ -35,7 +35,7 @@ const DiamondRewardModal = ({ onClaimReward }) => {
         <div className="text-center">
           <div className="flex justify-center mb-4">
             <img
-              src="./public/diamond-icon.png"
+              src="/diamond-icon.png"
               alt="Diamond reward"
               className="w-20 h-20 animate-bounce"
             />

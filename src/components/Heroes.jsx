@@ -23,7 +23,7 @@ const Heroes = () => {
         <div className="flex items-center justify-between mb-4 sm:mb-6">
           <div className="flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-[#2563eb]/40 to-[#0f172a]/80 px-3 sm:px-4 py-1 sm:py-2 border-l-4 border-blue-400 shadow-sm rounded-r">
             <div className="w-8 sm:w-10">
-              <img src="./public/hero.svg" className="w-full" alt="Hero Icon" />
+              <img src="/hero.svg" className="w-full" alt="Hero Icon" />
             </div>
             <h2 className="text-blue-200 text-sm sm:text-lg font-semibold uppercase tracking-wide">
               HERO
@@ -39,7 +39,7 @@ const Heroes = () => {
           {/* Left: Character Image - Full width on mobile, half on desktop */}
           <div className="sm:flex-shrink-0 w-full sm:w-1/2 lg:w-2/5">
             <img
-              src="./public/hero_zetian.png"
+              src="/hero_zetian.png"
               alt="Zetian"
               className="object-contain w-full h-auto max-h-80 sm:max-h-none mx-auto"
             />
@@ -63,7 +63,7 @@ const Heroes = () => {
               {[1, 2, 3, 4].map((skill) => (
                 <img
                   key={skill}
-                  src={`./public/hero_zetian-s${skill}.png`}
+                  src={`/hero_zetian-s${skill}.png`}
                   alt={`Skill ${skill}`}
                   className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full border-2 border-blue-500/50 hover:border-blue-400 transition flex-shrink-0"
                 />

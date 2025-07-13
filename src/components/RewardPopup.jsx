@@ -40,7 +40,7 @@ const RewardPopup = () => {
         <div className="text-center">
           <div className="flex justify-center mb-4">
             <img
-              src="./public/diamond-icon.png"
+              src="/diamond-icon.png"
               alt="Diamond"
               className="w-20 h-20 animate-bounce"
             />
