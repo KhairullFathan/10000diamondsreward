@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+@import url('./assets/fonts/fonts.css');
+
+@theme {
+  --ml-blue: '#1e3a8a';
+  --ml-dark: '#0f172a';
+  --ml-gold: '#fbbf24';
+  --font-helvetica: 'Helvetica';
+}
